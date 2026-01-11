@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game 1</title>
+</head>
+<body>
+    <h1>Click the Box Game</h1>
+    <div id="box" style="width:100px;height:100px;background:red;cursor:pointer;"></div>
+    <p>Clicks: <span id="count">0</span></p>
+
+    <script>
+        let count = 0;
+        document.getElementById("box").onclick = function() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+</body>
+</html>
